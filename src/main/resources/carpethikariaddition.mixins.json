@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "me.eventually.carpethikariaddition.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"kelp.KelpBulkBreakMixin",
+		"kelp.KelpGrowthPreventMixin",
+		"daytime.DayTimeOverrideMixin",
+		"item.FireChargeMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

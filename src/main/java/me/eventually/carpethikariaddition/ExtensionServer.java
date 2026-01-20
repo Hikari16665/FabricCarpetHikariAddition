@@ -1,14 +1,10 @@
-package carpet_extention;
+package me.eventually.carpethikariaddition;
 
 import carpet.CarpetExtension;
 import carpet.CarpetServer;
-import carpet.api.settings.CarpetRule;
 import carpet.api.settings.SettingsManager;
-import carpet.utils.Messenger;
 import carpet.utils.Translations;
-import carpet_extention.commands.ExampleCommand;
 import com.mojang.brigadier.CommandDispatcher;
-import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.command.CommandRegistryAccess;
@@ -27,11 +23,11 @@ public class ExtensionServer implements ModInitializer, CarpetExtension {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 
 
-	//!Replace this with your mods modid!
-	public static final String MODID = "modid";
+	//!Replace this with your mods carpethikariaddition!
+	public static final String MODID = "carpethikariaddition";
     public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
 
-	private static final SettingsManager mySettingManager = new SettingsManager("1.0.0", MODID,"Example Mod");
+	private static final SettingsManager mySettingManager = new SettingsManager("1.0.0", MODID,"CarpetHikariAddition");
 
 	@Override
 	public void onInitialize() {
@@ -45,13 +41,12 @@ public class ExtensionServer implements ModInitializer, CarpetExtension {
 		CarpetServer.manageExtension(new ExtensionServer());
 
 		// Let's have our own settings class independent of carpet.conf
-		mySettingManager.parseSettingsClass(ExampleOwnSettings.class);
+		mySettingManager.parseSettingsClass(ExtensionOwnSettings.class);
 
 
 
-
-
-		LOGGER.info("Example Carpet Extension Loaded! CHANGEME");
+		LOGGER.info("Hikari Carpet Extension Loaded!");
+		LOGGER.info("Love U! :3");
 	}
 
 
@@ -60,19 +55,18 @@ public class ExtensionServer implements ModInitializer, CarpetExtension {
 	 */
 	@Override
 	public void onGameStarted() {
-
-		// let's /carpet handle our few simple settings
-		CarpetServer.settingsManager.parseSettingsClass(ExampleSimpleSettings.class);
-
-		// set up a ruleObserver to observe when rules change in carpet.
-		//only observes rules from the settings managers it has been registered to.
-		// use registerGlobalObserver to observe rules from all settings managers (that allow for this feature)
-		CarpetServer.settingsManager.registerRuleObserver(ExtensionServer::exampleRuleObserver);
+//
+//		// let's /carpet handle our few simple settings
+//		CarpetServer.settingsManager.parseSettingsClass(ExampleSimpleSettings.class);
+//
+//		// set up a ruleObserver to observe when rules change in carpet.
+//		//only observes rules from the settings managers it has been registered to.
+//		// use registerGlobalObserver to observe rules from all settings managers (that allow for this feature)
+//		CarpetServer.settingsManager.registerRuleObserver(ExtensionServer::exampleRuleObserver);
 	}
 
 	@Override
 	public void registerCommands(CommandDispatcher<ServerCommandSource> dispatcher, final CommandRegistryAccess commandBuildContext) {
-		ExampleCommand.register(dispatcher);
 	}
 
 
@@ -86,21 +80,6 @@ public class ExtensionServer implements ModInitializer, CarpetExtension {
 
 	@Override
 	public Map<String, String> canHasTranslations(String lang) {
-		return Translations.getTranslationFromResourcePath("assets/modid/lang/%s.json".formatted(lang));
-	}
-
-	public static void exampleRuleObserver(ServerCommandSource serverCommandSource, CarpetRule<?> currentRuleState, String originalUserTest) {
-		if (currentRuleState.categories().contains("examplemod")) {
-			Messenger.m(
-					serverCommandSource,
-					"gi Psssst... make sure not to touch original carpet rules"
-			);
-			// obviously you can change original carpet rules
-		} else if (serverCommandSource.getPlayer() != null) {
-			Messenger.print_server_message(
-					serverCommandSource.getServer(),
-					"Ehlo everybody, "+serverCommandSource.getPlayer().getName().getString()+" is cheating..."
-			);
-		}
+		return Translations.getTranslationFromResourcePath("assets/carpethikariaddition/lang/%s.json".formatted(lang));
 	}
 }

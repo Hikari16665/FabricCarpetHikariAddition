@@ -1,0 +1,14 @@
+{
+  "carpethikariaddition.rule.kelpBulkBreaking.desc": "[新增功能] 启用海带批次破坏",
+  "carpethikariaddition.rule.kelpBulkBreaking.name": "海带一锅端",
+  "carpethikariaddition.rule.kelpPreventGrowth.desc": "[行为重写] 防止海带生长",
+  "carpethikariaddition.rule.kelpPreventGrowth.name": "海带没有力量",
+  "carpethikariaddition.rule.kelpBulkBreakingDrop.desc": "[新增功能] 批次破坏海带时是否掉落掉落物",
+  "carpethikariaddition.rule.kelpBulkBreakingDrop.name": "海带批量破坏掉落",
+  "carpethikariaddition.rule.enableDayTimeOverride.desc": "[刻事件] 是否启用游戏日时间覆盖",
+  "carpethikariaddition.rule.enableDayTimeOverride.name": "游戏日时间覆盖",
+  "carpethikariaddition.rule.dayTimeOverride.desc": "[刻事件] 游戏日时间覆盖值",
+  "carpethikariaddition.rule.dayTimeOverride.name": "游戏日时间覆盖值",
+  "carpethikariaddition.rule.fireChargeNoFireBlock.desc": "[行为重写] 让火球做它应该做的事情，但是不生成火焰方块",
+  "carpethikariaddition.rule.fireChargeNoFireBlock.name": "安全的火球"
+}

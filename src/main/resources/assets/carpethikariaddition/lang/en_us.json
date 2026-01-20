@@ -1,0 +1,14 @@
+{
+  "carpethikariaddition.rule.kelpBulkBreaking.desc": "[FEATURE] Enable kelp bulk breaking",
+  "carpethikariaddition.rule.kelpBulkBreaking.name": "Kelp Bulk Breaking",
+  "carpethikariaddition.rule.kelpPreventGrowth.desc": "[REWRITE] Prevent kelp growth",
+  "carpethikariaddition.rule.kelpPreventGrowth.name": "Kelp Prevent Growth",
+  "carpethikariaddition.rule.kelpBulkBreakingDrop.desc": "[FEATURE] Should drop items when bulk breaking kelp",
+  "carpethikariaddition.rule.kelpBulkBreakingDrop.name": "Kelp Bulk Breaking Drop",
+  "carpethikariaddition.rule.enableDayTimeOverride.desc": "[TICK] Enable day time override",
+  "carpethikariaddition.rule.enableDayTimeOverride.name": "Day Time Override",
+  "carpethikariaddition.rule.dayTimeOverride.desc": "[TICK] Day time override value",
+  "carpethikariaddition.rule.dayTimeOverride.name": "Day Time Override Value",
+  "carpethikariaddition.rule.fireChargeNoFireBlock.desc": "[REWRITE] Let fire charge do things it should do, but not create fire block",
+  "carpethikariaddition.rule.fireChargeNoFireBlock.name": "Safe Fire Charge"
+}
