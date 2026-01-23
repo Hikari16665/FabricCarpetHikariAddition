@@ -3,10 +3,13 @@
 	"package": "me.eventually.carpethikariaddition.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"kelp.KelpBulkBreakMixin",
-		"kelp.KelpGrowthPreventMixin",
 		"daytime.DayTimeOverrideMixin",
-		"item.FireChargeMixin"
+		"entity.FallingAnvilMixin",
+		"item.FireChargeMixin",
+		"item.KelpBulkBreakMixin",
+		"item.KelpGrowthPreventMixin",
+		"item.PaperClickHandlerMixin",
+		"screen.ShulkerBoxBulkCraftingMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

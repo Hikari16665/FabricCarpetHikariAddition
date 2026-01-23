@@ -10,5 +10,9 @@
   "carpethikariaddition.rule.dayTimeOverride.desc": "[刻事件] 游戏日时间覆盖值",
   "carpethikariaddition.rule.dayTimeOverride.name": "游戏日时间覆盖值",
   "carpethikariaddition.rule.fireChargeNoFireBlock.desc": "[行为重写] 让火球做它应该做的事情，但是不生成火焰方块",
-  "carpethikariaddition.rule.fireChargeNoFireBlock.name": "安全的火球"
+  "carpethikariaddition.rule.fireChargeNoFireBlock.name": "安全的火球",
+  "carpethikariaddition.rule.fastFallingAnvil.desc": "[行为重写] 使铁砧坠落更快",
+  "carpethikariaddition.rule.fastFallingAnvil.name": "铁砧快速坠落",
+  "carpethikariaddition.rule.shulkerBoxBulkCrafting.desc": "[行为重写] 潜影盒批量合成: \n使用装满物品的潜影盒作为工作台的输入,它将根据原版的逻辑输出物品,装在潜影盒内.",
+  "carpethikariaddition.rule.shulkerBoxBulkCrafting.name": "潜影盒批量合成"
 }

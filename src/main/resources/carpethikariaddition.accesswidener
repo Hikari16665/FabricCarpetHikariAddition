@@ -1,3 +1,7 @@
 accessWidener v2 named
 
 accessible method net/minecraft/block/AbstractFireBlock shouldLightPortalAt (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/Direction;)Z
+accessible method net/minecraft/entity/FallingBlockEntity getGravity ()D
+accessible method net/minecraft/component/type/ContainerComponent <init> (Lnet/minecraft/util/collection/DefaultedList;)V
+
+accessible field net/minecraft/screen/ScreenHandler revision I

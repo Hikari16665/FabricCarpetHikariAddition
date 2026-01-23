@@ -10,5 +10,9 @@
   "carpethikariaddition.rule.dayTimeOverride.desc": "[TICK] Day time override value",
   "carpethikariaddition.rule.dayTimeOverride.name": "Day Time Override Value",
   "carpethikariaddition.rule.fireChargeNoFireBlock.desc": "[REWRITE] Let fire charge do things it should do, but not create fire block",
-  "carpethikariaddition.rule.fireChargeNoFireBlock.name": "Safe Fire Charge"
+  "carpethikariaddition.rule.fireChargeNoFireBlock.name": "Safe Fire Charge",
+  "carpethikariaddition.rule.fastFallingAnvil.desc": "[REWRITE] Make anvil falling faster",
+  "carpethikariaddition.rule.fastFallingAnvil.name": "Fast Falling Anvil",
+  "carpethikariaddition.rule.shulkerBoxBulkCrafting.desc": "[FEATURE] Enable shulker box bulk crafting \n Use shulker box full filled with single item as input, it will output shulker box according to vanilla logic, with items inside.",
+  "carpethikariaddition.rule.shulkerBoxBulkCrafting.name": "Shulker Box Bulk Crafting"
 }
