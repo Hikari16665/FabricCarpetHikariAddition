@@ -109,7 +109,7 @@ public abstract class ShulkerBoxBulkCraftingMixin extends ScreenHandler {
                 CraftingRecipeInput recipeInput = CraftingRecipeInput.create(3, 3, craftingInput);
 
                 // 获取世界对象，用于验证配方
-                World world = cachedPlayer.getWorld();
+                World world = cachedPlayer.getEntityWorld();
                 if (world instanceof ServerWorld serverWorld) {
                     // 验证是否存在有效的合成配方
                     Optional<RecipeEntry<CraftingRecipe>> recipeEntryOpt =

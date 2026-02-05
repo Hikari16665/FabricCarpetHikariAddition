@@ -87,7 +87,7 @@ public abstract class PaperClickHandlerMixin {
                 return;
             }
             if ("您已触发潜影盒批量合成".equals(name.getString())) {
-                if (player.getWorld() instanceof ServerWorld serverWorld) {
+                if (player.getEntityWorld() instanceof ServerWorld serverWorld) {
                     // 从Lore中读取批量合成信息
                     if (stack.contains(DataComponentTypes.LORE)) {
                         int paperStackCount = stack.getCount();

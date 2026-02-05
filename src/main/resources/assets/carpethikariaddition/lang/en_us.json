@@ -18,6 +18,5 @@
   "carpethikariaddition.rule.shulkerBoxBlockPlace.desc": "[FEATURE] Place items in shulker instead of placing shulker box",
   "carpethikariaddition.rule.shulkerBoxBlockPlace.name": "Shulker Box Block Place",
   "carpethikariaddition.rule.villagerFastGrow.desc": "[FEATURE] Make villagers grow faster",
-  "carpethikariaddition.rule.villagerFastGrow.name": "Villager Fast Grow",
-  "logger.fakePeace": "Fake Peace Indicator"
+  "carpethikariaddition.rule.villagerFastGrow.name": "Villager Fast Grow"
 }
