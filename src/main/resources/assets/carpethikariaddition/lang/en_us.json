@@ -14,5 +14,10 @@
   "carpethikariaddition.rule.fastFallingAnvil.desc": "[REWRITE] Make anvil falling faster",
   "carpethikariaddition.rule.fastFallingAnvil.name": "Fast Falling Anvil",
   "carpethikariaddition.rule.shulkerBoxBulkCrafting.desc": "[FEATURE] Enable shulker box bulk crafting \n Use shulker box full filled with single item as input, it will output shulker box according to vanilla logic, with items inside.",
-  "carpethikariaddition.rule.shulkerBoxBulkCrafting.name": "Shulker Box Bulk Crafting"
+  "carpethikariaddition.rule.shulkerBoxBulkCrafting.name": "Shulker Box Bulk Crafting",
+  "carpethikariaddition.rule.shulkerBoxBlockPlace.desc": "[FEATURE] Place items in shulker instead of placing shulker box",
+  "carpethikariaddition.rule.shulkerBoxBlockPlace.name": "Shulker Box Block Place",
+  "carpethikariaddition.rule.villagerFastGrow.desc": "[FEATURE] Make villagers grow faster",
+  "carpethikariaddition.rule.villagerFastGrow.name": "Villager Fast Grow",
+  "logger.fakePeace": "Fake Peace Indicator"
 }

@@ -1,17 +1,19 @@
 {
-	"required": true,
-	"package": "me.eventually.carpethikariaddition.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"daytime.DayTimeOverrideMixin",
-		"entity.FallingAnvilMixin",
-		"item.FireChargeMixin",
-		"item.KelpBulkBreakMixin",
-		"item.KelpGrowthPreventMixin",
-		"item.PaperClickHandlerMixin",
-		"screen.ShulkerBoxBulkCraftingMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "me.eventually.carpethikariaddition.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "block.ShulkerBoxBlockItemPlaceMixin",
+    "daytime.DayTimeOverrideMixin",
+    "entity.FallingAnvilMixin",
+    "entity.VillagerFastGrowMixin",
+    "item.FireChargeMixin",
+    "item.KelpBulkBreakMixin",
+    "item.KelpGrowthPreventMixin",
+    "item.PaperClickHandlerMixin",
+    "screen.ShulkerBoxBulkCraftingMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }

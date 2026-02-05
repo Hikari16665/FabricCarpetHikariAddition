@@ -14,5 +14,10 @@
   "carpethikariaddition.rule.fastFallingAnvil.desc": "[行为重写] 使铁砧坠落更快",
   "carpethikariaddition.rule.fastFallingAnvil.name": "铁砧快速坠落",
   "carpethikariaddition.rule.shulkerBoxBulkCrafting.desc": "[行为重写] 潜影盒批量合成: \n使用装满物品的潜影盒作为工作台的输入,它将根据原版的逻辑输出物品,装在潜影盒内.",
-  "carpethikariaddition.rule.shulkerBoxBulkCrafting.name": "潜影盒批量合成"
+  "carpethikariaddition.rule.shulkerBoxBulkCrafting.name": "潜影盒批量合成",
+  "carpethikariaddition.rule.shulkerBoxBlockPlace.desc": "[新增功能] 放置潜影盒时,将放置盒内的物品,而不是放置潜影盒本身.",
+  "carpethikariaddition.rule.shulkerBoxBlockPlace.name": "潜影盒物品放置",
+  "carpethikariaddition.rule.villagerFastGrow.desc": "[新增功能] 使村民更快地成长",
+  "carpethikariaddition.rule.villagerFastGrow.name": "§m三鹿奶粉§r村民快速成长",
+  "logger.fakePeace": "伪和平指示条"
 }
