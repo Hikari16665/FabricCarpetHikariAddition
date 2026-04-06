@@ -5,13 +5,13 @@
 	"name": "Carpet Hikari Addition",
 	"description": "Addition to Carpet Mod for Hikari",
 	"authors": [
-		"Me!"
+		"HikariAwaken"
 	],
 	"contact": {
 		"homepage": "https://github.com/Hikari16665/FabricCarpetHikariAddition",
 		"sources": "https://github.com/Hikari16665/FabricCarpetHikariAddition"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/carpethikariaddition/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -24,7 +24,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.18.2",
-		"minecraft": "~1.21.7",
+		"minecraft": "~1.21.11",
 		"java": ">=21",
 		"carpet": "*"
 	},

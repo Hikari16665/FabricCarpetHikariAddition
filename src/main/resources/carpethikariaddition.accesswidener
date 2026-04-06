@@ -3,5 +3,13 @@ accessWidener v2 named
 accessible method net/minecraft/block/AbstractFireBlock shouldLightPortalAt (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/Direction;)Z
 accessible method net/minecraft/entity/FallingBlockEntity getGravity ()D
 accessible method net/minecraft/component/type/ContainerComponent <init> (Lnet/minecraft/util/collection/DefaultedList;)V
+accessible method net/minecraft/item/BlockItem placeFromNbt (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/world/World;Lnet/minecraft/item/ItemStack;Lnet/minecraft/block/BlockState;)Lnet/minecraft/block/BlockState;
+accessible method net/minecraft/item/BlockItem postPlacement (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/item/ItemStack;Lnet/minecraft/block/BlockState;)Z
+accessible method net/minecraft/item/BlockItem copyComponentsToBlockEntity (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/item/ItemStack;)V
+accessible method net/minecraft/item/BlockItem place (Lnet/minecraft/item/ItemPlacementContext;Lnet/minecraft/block/BlockState;)Z
+accessible method net/minecraft/item/BlockItem getPlacementState (Lnet/minecraft/item/ItemPlacementContext;)Lnet/minecraft/block/BlockState;
+accessible method net/minecraft/item/BlockItem getPlaceSound (Lnet/minecraft/block/BlockState;)Lnet/minecraft/sound/SoundEvent;
 
 accessible field net/minecraft/screen/ScreenHandler revision I
+
+accessible class net/minecraft/util/collection/DefaultedList

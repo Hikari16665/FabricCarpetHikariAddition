@@ -1,8 +1,7 @@
 plugins {
-	id 'fabric-loom' version '1.14-SNAPSHOT'
+	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
 	id 'maven-publish'
 }
-
 version = project.mod_version
 group = project.maven_group
 
@@ -29,7 +28,6 @@ dependencies {
 	//carpet mod!
 	modImplementation "carpet:fabric-carpet:${project.carpet_core_version}"
 
-	implementation 'ch.qos.logback:logback-classic:1.4.7'
 
 
 	implementation 'org.apache.commons:commons-lang3:3.12.0'

@@ -18,40 +18,41 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
  */
 @Mixin(Block.class)
 public class KelpBulkBreakMixin {
-  @Inject(method = "onBreak", at = @At("HEAD"))
-  public void afterBreak(
-      World world,
-      BlockPos pos,
-      BlockState state,
-      PlayerEntity player,
-      CallbackInfoReturnable<BlockState> cir) {
-    if (!ExtensionOwnSettings.kelpBulkBreaking) {
-      return;
+    @Inject(method = "onBreak", at = @At("HEAD"))
+    public void afterBreak(
+            World world,
+            BlockPos pos,
+            BlockState state,
+            PlayerEntity player,
+            CallbackInfoReturnable<BlockState> cir) {
+        if (!ExtensionOwnSettings.kelpBulkBreaking) {
+            return;
+        }
+        boolean bulkBreakDrop = ExtensionOwnSettings.kelpBulkBreakingDrop;
+        if (state.getBlock() != Blocks.KELP && state.getBlock() != Blocks.KELP_PLANT) {
+            return;
+        }
+        BlockPos.Mutable mutablePos = new BlockPos.Mutable();
+        mutablePos.set(pos);
+        while (mutablePos.getY() > world.getBottomY()) {
+            mutablePos.move(0, -1, 0);
+            BlockState belowState = world.getBlockState(mutablePos);
+            if (belowState.getBlock() != Blocks.KELP
+                    && belowState.getBlock() != Blocks.KELP_PLANT) {
+                mutablePos.move(0, 1, 0);
+                break;
+            }
+        }
+        while (mutablePos.getY()
+                < world.getTopY(Heightmap.Type.MOTION_BLOCKING, mutablePos.toImmutable())) {
+            BlockState currentBlockState = world.getBlockState(mutablePos);
+            if (currentBlockState.getBlock() == Blocks.KELP
+                    || currentBlockState.getBlock() == Blocks.KELP_PLANT) {
+                world.breakBlock(mutablePos.toImmutable(), bulkBreakDrop, player);
+                mutablePos.move(0, 1, 0);
+            } else {
+                break;
+            }
+        }
     }
-    boolean bulkBreakDrop = ExtensionOwnSettings.kelpBulkBreakingDrop;
-    if (state.getBlock() != Blocks.KELP && state.getBlock() != Blocks.KELP_PLANT) {
-      return;
-    }
-    BlockPos.Mutable mutablePos = new BlockPos.Mutable();
-    mutablePos.set(pos);
-    while (mutablePos.getY() > world.getBottomY()) {
-      mutablePos.move(0, -1, 0);
-      BlockState belowState = world.getBlockState(mutablePos);
-      if (belowState.getBlock() != Blocks.KELP && belowState.getBlock() != Blocks.KELP_PLANT) {
-        mutablePos.move(0, 1, 0);
-        break;
-      }
-    }
-    while (mutablePos.getY()
-        < world.getTopY(Heightmap.Type.MOTION_BLOCKING, mutablePos.toImmutable())) {
-      BlockState currentBlockState = world.getBlockState(mutablePos);
-      if (currentBlockState.getBlock() == Blocks.KELP
-          || currentBlockState.getBlock() == Blocks.KELP_PLANT) {
-        world.breakBlock(mutablePos.toImmutable(), bulkBreakDrop, player);
-        mutablePos.move(0, 1, 0);
-      } else {
-        break;
-      }
-    }
-  }
 }
