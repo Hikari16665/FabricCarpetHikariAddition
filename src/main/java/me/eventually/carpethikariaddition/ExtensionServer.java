@@ -5,7 +5,9 @@ import carpet.CarpetServer;
 import carpet.api.settings.SettingsManager;
 import carpet.utils.Translations;
 import com.mojang.brigadier.CommandDispatcher;
+import me.eventually.carpethikariaddition.listeners.BlockUseListener;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.minecraft.command.CommandRegistryAccess;
 import net.minecraft.server.command.ServerCommandSource;
 import org.slf4j.Logger;
@@ -34,11 +36,15 @@ public class ExtensionServer implements ModInitializer, CarpetExtension {
         // This is also where we will initialize out carpet extension and Settings Manager!
 
         // we can't access carpet's settings manager here (yet)!
+        UseBlockCallback.EVENT.register(BlockUseListener::onBlockUse);
 
         CarpetServer.manageExtension(new ExtensionServer());
 
         // Let's have our own settings class independent of carpet.conf
         mySettingManager.parseSettingsClass(ExtensionOwnSettings.class);
+
+
+
 
         LOGGER.info("Hikari Carpet Extension Loaded!");
         LOGGER.info("Love U! :3");

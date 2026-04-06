@@ -18,5 +18,7 @@
   "carpethikariaddition.rule.shulkerBoxBlockPlace.desc": "[FEATURE] Place items in shulker instead of placing shulker box",
   "carpethikariaddition.rule.shulkerBoxBlockPlace.name": "Shulker Box Block Place",
   "carpethikariaddition.rule.villagerFastGrow.desc": "[FEATURE] Make villagers grow faster",
-  "carpethikariaddition.rule.villagerFastGrow.name": "Villager Fast Grow"
+  "carpethikariaddition.rule.villagerFastGrow.name": "Villager Fast Grow",
+  "carpethikariaddition.rule.magicOfNamedBlock.name": "[FEATURE] Magic of Block Naming",
+  "carpethikariaddition.rule.magicOfNamedBlock.desc": "Blocks named with special values will become special blocks when placed"
 }

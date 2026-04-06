@@ -18,5 +18,7 @@
   "carpethikariaddition.rule.shulkerBoxBlockPlace.desc": "[新增功能] 放置潜影盒时,将放置盒内的物品,而不是放置潜影盒本身.",
   "carpethikariaddition.rule.shulkerBoxBlockPlace.name": "潜影盒物品放置",
   "carpethikariaddition.rule.villagerFastGrow.desc": "[新增功能] 使村民更快地成长",
-  "carpethikariaddition.rule.villagerFastGrow.name": "§m三鹿奶粉§r村民快速成长"
+  "carpethikariaddition.rule.villagerFastGrow.name": "§m三鹿奶粉§r村民快速成长",
+  "carpethikariaddition.rule.magicOfNamedBlock.name": "[新增功能] 方块命名魔法",
+  "carpethikariaddition.rule.magicOfNamedBlock.desc": "命名为特殊值的方块物品在放置后会变成特殊方块"
 }

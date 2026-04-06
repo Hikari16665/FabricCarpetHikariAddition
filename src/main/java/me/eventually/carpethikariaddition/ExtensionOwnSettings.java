@@ -64,6 +64,9 @@ public class ExtensionOwnSettings {
     @Rule(categories = {MODID, EXPERIMENTAL})
     public static boolean shulkerBoxBulkCrafting = false;
 
+    @Rule(categories = {MODID, EXPERIMENTAL})
+    public static boolean magicOfNamedBlock = false;
+
     @Rule(categories = {MODID, ITEM})
     public static boolean shulkerBoxBlockPlace = false;
 }
