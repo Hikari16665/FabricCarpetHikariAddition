@@ -34,6 +34,7 @@ public class ExtensionOwnSettings {
     public static final String ITEM = "item";
     public static final String ENTITY = "entity";
     public static final String EXPERIMENTAL = "experimental";
+    public static final String OH = "oh-holy";
 
     @Rule(categories = {MODID, MAINTENANCE})
     public static boolean kelpBulkBreaking = false;
@@ -52,6 +53,9 @@ public class ExtensionOwnSettings {
             validators = DayTimeValidator.class)
     public static long dayTimeOverride = 0L;
 
+    @Rule(categories = {MODID, LEVEL})
+    public static boolean preventLightUpdate = false;
+
     @Rule(categories = {MODID, ITEM})
     public static boolean fireChargeNoFireBlock = false;
 
@@ -69,4 +73,7 @@ public class ExtensionOwnSettings {
 
     @Rule(categories = {MODID, ITEM})
     public static boolean shulkerBoxBlockPlace = false;
+
+    @Rule(categories = {MODID, OH})
+    public static boolean middleEastMode = false;
 }

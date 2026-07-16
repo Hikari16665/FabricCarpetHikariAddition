@@ -5,15 +5,39 @@ import carpet.CarpetServer;
 import carpet.api.settings.SettingsManager;
 import carpet.utils.Translations;
 import com.mojang.brigadier.CommandDispatcher;
+import me.eventually.carpethikariaddition.command.EasyDebugCommand;
 import me.eventually.carpethikariaddition.listeners.BlockUseListener;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
+import net.minecraft.block.BlockState;
 import net.minecraft.command.CommandRegistryAccess;
+import net.minecraft.command.argument.DimensionArgumentType;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityDimensions;
+import net.minecraft.network.packet.s2c.play.PositionFlag;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.server.command.ServerCommandSource;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.state.property.Properties;
+import net.minecraft.text.Text;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.BlockLocating;
+import net.minecraft.world.TeleportTarget;
+import net.minecraft.world.World;
+import net.minecraft.world.border.WorldBorder;
+import net.minecraft.world.dimension.DimensionType;
+import net.minecraft.world.dimension.NetherPortal;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Map;
+import java.util.Optional;
+import java.util.Set;
+
+import static net.minecraft.server.command.CommandManager.*;
 
 /** Check CarpetExtension interface for more events. */
 public class ExtensionServer implements ModInitializer, CarpetExtension {
@@ -61,7 +85,9 @@ public class ExtensionServer implements ModInitializer, CarpetExtension {
     @Override
     public void registerCommands(
             CommandDispatcher<ServerCommandSource> dispatcher,
-            final CommandRegistryAccess commandBuildContext) {}
+            final CommandRegistryAccess commandBuildContext) {
+        EasyDebugCommand.register(dispatcher);
+    }
 
     @Override
     public SettingsManager extensionSettingsManager() {

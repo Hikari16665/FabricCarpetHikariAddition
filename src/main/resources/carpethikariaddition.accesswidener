@@ -10,6 +10,9 @@ accessible method net/minecraft/item/BlockItem place (Lnet/minecraft/item/ItemPl
 accessible method net/minecraft/item/BlockItem getPlacementState (Lnet/minecraft/item/ItemPlacementContext;)Lnet/minecraft/block/BlockState;
 accessible method net/minecraft/item/BlockItem getPlaceSound (Lnet/minecraft/block/BlockState;)Lnet/minecraft/sound/SoundEvent;
 
+
 accessible field net/minecraft/screen/ScreenHandler revision I
+accessible field net/minecraft/entity/mob/MobEntity goalSelector Lnet/minecraft/entity/ai/goal/GoalSelector;
+accessible field net/minecraft/entity/mob/MobEntity targetSelector Lnet/minecraft/entity/ai/goal/GoalSelector;
 
 accessible class net/minecraft/util/collection/DefaultedList

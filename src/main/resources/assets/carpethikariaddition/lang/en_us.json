@@ -20,5 +20,9 @@
   "carpethikariaddition.rule.villagerFastGrow.desc": "[FEATURE] Make villagers grow faster",
   "carpethikariaddition.rule.villagerFastGrow.name": "Villager Fast Grow",
   "carpethikariaddition.rule.magicOfNamedBlock.name": "[FEATURE] Magic of Block Naming",
-  "carpethikariaddition.rule.magicOfNamedBlock.desc": "Blocks named with special values will become special blocks when placed"
+  "carpethikariaddition.rule.magicOfNamedBlock.desc": "Blocks named with special values will become special blocks when placed",
+  "carpethikariaddition.rule.preventLightUpdate.name": "[REWRITE] Prevent Light Update",
+  "carpethikariaddition.rule.preventLightUpdate.desc": "Prevents all block updates, it's unknown that if this will harm game levels.",
+  "carpethikariaddition.rule.middleEastMode.name": "[WTF] Middle East Creeper",
+  "carpethikariaddition.rule.middleEastMode.desc": "yeah you know this"
 }

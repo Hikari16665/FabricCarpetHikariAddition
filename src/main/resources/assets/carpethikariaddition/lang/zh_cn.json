@@ -20,5 +20,9 @@
   "carpethikariaddition.rule.villagerFastGrow.desc": "[新增功能] 使村民更快地成长",
   "carpethikariaddition.rule.villagerFastGrow.name": "§m三鹿奶粉§r村民快速成长",
   "carpethikariaddition.rule.magicOfNamedBlock.name": "[新增功能] 方块命名魔法",
-  "carpethikariaddition.rule.magicOfNamedBlock.desc": "命名为特殊值的方块物品在放置后会变成特殊方块"
+  "carpethikariaddition.rule.magicOfNamedBlock.desc": "命名为特殊值的方块物品在放置后会变成特殊方块",
+  "carpethikariaddition.rule.preventLightUpdate.name": "[行为重写] 阻止亮度更新",
+  "carpethikariaddition.rule.preventLightUpdate.desc": "阻止所有类型的光照更新,未知是否伤害存档",
+  "carpethikariaddition.rule.middleEastMode.name": "[WTF] 中东苦力怕",
+  "carpethikariaddition.rule.middleEastMode.desc": "你知道的太多了..."
 }

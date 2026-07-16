@@ -5,8 +5,10 @@
   "mixins": [
     "block.ShulkerBoxBlockItemPlaceMixin",
     "daytime.DayTimeOverrideMixin",
+    "entity.CreeperMixin",
     "entity.FallingAnvilMixin",
     "entity.VillagerFastGrowMixin",
+    "game.LightUpdateMixin",
     "item.FireChargeMixin",
     "item.KelpBulkBreakMixin",
     "item.KelpGrowthPreventMixin",
